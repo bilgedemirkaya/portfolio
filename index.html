@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Bilge Demirkaya</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"> 
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">  
+    <!-- Theme CSS -->  
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<style>
+	.certificates {
+		cursor: pointer;
+		transition: 0.3s;
+	  }
+	  
+	  #certificates:hover {opacity: 0.7;}
+	  
+	  /* The Modal (background) */
+	  .modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	  }
+	  
+	  /* Modal Content (image) */
+	  .modal-content {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+	  }
+	  
+	  /* Caption of Modal Image */
+	  #caption {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+		text-align: center;
+		color: #ccc;
+		padding: 10px 0;
+		height: 150px;
+	  }
+	  
+	  /* Add Animation */
+	  .modal-content, #caption {  
+		-webkit-animation-name: zoom;
+		-webkit-animation-duration: 0.6s;
+		animation-name: zoom;
+		animation-duration: 0.6s;
+	  }
+	  
+	  @-webkit-keyframes zoom {
+		from {-webkit-transform:scale(0)} 
+		to {-webkit-transform:scale(1)}
+	  }
+	  
+	  @keyframes zoom {
+		from {transform:scale(0)} 
+		to {transform:scale(1)}
+	  }
+	  
+	  /* The Close Button */
+	  .close {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	  }
+	  
+	  .close:hover,
+	  .close:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	  }
+	  
+	  /* 100% Image Width on Smaller Screens */
+	  @media only screen and (max-width: 700px){
+		.modal-content {
+		  width: 100%;
+		}
+        .list-inline-item {
+           width: 40px !important;
+           display: inline-block;
+        }
+        .maincontainer {
+            width: 100%;
+        }
+
+	  }
+	  </style>
+</head> 
+
+<body>  
+    <header class="header" style="background-color: #000000;">
+        <div class="top-bar container-fluid">
+            
+        </div>
+        
+        <div class="intro" style="background-color: #000000;">
+            <div class="container text-center">
+                <img class="profile-image" style= "width: 150px; height: 200px; border-radius: 5px;" src="assets/images/profil.jpg" alt="profil">
+                <h1 class="name" style="margin-top: 35px;">Bilge Demirkaya</h1>
+                <div class="title">Full Stack Developer</div>
+                <div class="profile">
+                    <p> I spend most of the time with coding, learning and writing. I currently focus on exploring JavaScript. 
+					</p>
+				<p> I am mostly interested in startups. I also love playing chess and Evans Gambit</p>
+                </div><!--//profile-->
+            </div><!--//container-->
+        </div><!--//intro-->
+        
+        <div class="contact-info">
+            <div class="container text-center">
+                <ul class="list-inline">
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/bilge-demirkaya/"><i class="fa fa-linkedin fa-2x" ></i></a></li>
+					<li class="list-inline-item"><a href="https://bilgedemirkaya.medium.com/"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a></li>
+					<li class="list-inline-item"><a href="https://github.com/bilgedemirkaya"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a></li>
+					<li class="list-inline-item"><a href="https://stackoverflow.com/users/12727479/bdemirka"><i class="fa fa-stack-overflow fa-fw fa-2x"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.codewars.com/users/bilgedemirkaya"><i class="fa fa-code fa-2x"></i></a></li>
+					<li class="list-inline-item"><a href="https://twitter.com/bilgedemirkaya"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="email list-inline-item"><i class="fa fa-envelope mr-2 fa-2x"></i><a href="mailto:bilgedemirkaya00@hotmail.com"></a></li>
+                </ul>
+            </div><!--//container-->
+        </div><!--//contact-info-->
+        
+        <div id="page-nav-space-holder" class="page-nav-space-holder d-none d-md-block">
+            <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+                <div class="container">
+                    <ul id="page-nav" class="nav page-nav list-inline">
+                        <li class="nav-item"><a class="scrollto nav-link" href="#experiences-section">Experiences</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#education-section">Education</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#skills-section">Skills</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#certificates-section">Certificates</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#portfolio-section">Portfolio</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="https://bilgedemirkaya.medium.com/" style="color:rgb(255, 0, 0); font-size: large;">Blog</a></li>
+                    </ul><!--//page-nav-->
+                </div>
+            </div><!--//page-nav-wrapper-->
+        </div>
+        
+    </header><!--//header-->
+    
+    <div  class="maincontainer" style="width: 80%; margin:auto;">
+        <section id="experiences-section" class="experiences-section section">
+            <h2 class="section-title">Work Experiences</h2>
+            <div class="timeline">
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Lonca Works</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Berlin</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Apprentice Software Engineer | Student </div>
+                        <div class="time">Nov 2020 - Present</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Lonca (Guild) is a school of software engineering that follows the software craftsmanship movement. In contrast to the classical education systems, it emphasizes an approach to equip students with industry quality software development skills. Lonca is an organization that aims to create the software culture of the future by means of bringing modern technology craftsmen together and forming a medium to disseminate the collective wisdom from the master to the apprentice in a similar fashion to old craft guilds. Experienced: 
+						</p> 
+                        <ul>
+                            <li>Node.js & Express.js</li>
+                            <li>Vue.js </li>
+							<li>MongoDB && Docker && Heroku </li>
+						</ul>
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place"> GarageScript </h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i> San Jose, CA</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title"> Intern Full Stack Engineer | Student </div>
+                        <div class="time">Nov 2020 - Present</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p> I am currently following a full-stack engineering curriculum at www.c0d3.com developed for GarageScript. It is a nonprofit public benefit organization dedicated to helping and training people who are pursuing a career as a software engineer.
+						</p> 
+                        <ul>
+                            <li> JavaScipt Algorithms & Node.js </li>
+                            <li> React & GraphQL & SocketIO </li>
+						</ul>
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place"> Yesil Science </h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i> Istanbul </div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Backend Developer</div>
+                        <div class="time">Sep 2020 - Feb 2021</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p> Yesil Science is a growing startup that transforming health by combining technology and medicine. I worked for a mobile app project, FluAI. FluAI is a mobile health application that gives the user personal analysis and recommendations for upper respiratory infections such as flu.
+							People who show symptoms of disease, fever, cough, etc. provides information and suggestions about his condition with artificial intelligence analysis through patient’s complaints and photograph of his throat. Experienced: </p> 
+							<ul>
+								<li>Python Django && Django Rest Framework</li>
+								<li>AWS </li>
+								<li>Postresql </li>
+							</ul>
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Ideapol Idea Agency</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Antalya</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Software Developer</div>
+                        <div class="time">Apr 2019 - Jun 2020</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p> Ideapol Idea Agency is a leading full-service Digital Marketing Agency. I worked closely with top brands and companies based in Antalya and build web & mobile applications for them. Experienced: </p> 
+						<ul>
+							<li> HTML5 & CSS & SCSS & JavaScript & React.js & Redux.js </li>
+							<li> Wordpress </li>
+							<li> Customer Relations </li>
+						</ul>
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+            </div><!--//timeline-->
+            
+        </section><!--//section-->
+        
+        <section id="education-section" class="education-section section">
+            <h2 class="section-title">Education</h2>
+            <div class="row">
+                <div class="item col-12 col-md-4">
+						<div class="item-inner">
+							<h3 class="degree">Computer Software Engineering</h3>
+							<div class="education-body">
+								42 Paris
+							</div><!--//education-body-->
+							<div class="time">2020 - Present</div>
+							<div class="desc">
+								Experienced C language with different school projects. Download the school record <a href="https://projects.intra.42.fr/users/66369/school_records/10/generate.pdf" download>here </a>
+							</div>
+						</div><!--//item-inner-->
+					</div><!--//item-->
+				<div class="item col-12 col-md-4">
+                    <div class="item-inner">
+                        <h3 class="degree">Computer Software Engineering </h3>
+                        <div class="education-body">
+                            42 Silicon Valley
+                        </div><!--//education-body-->
+                        <div class="time">2019 - 2020</div>
+                        <div class="desc">
+                            42 Silicon Valley is disrupting engineering education in the Bay Area and beyond. 
+							https://www.42.us.org/ <hr>
+                        </div> 
+						<div class="desc">
+							I transferred to 42 Paris in 2020 due to Covid-19 situation.
+						</div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-12 col-md-4">
+                    <div class="item-inner">
+                        <h3 class="degree">Bachelor Degree, International Relations</h3>
+                        <div class="education-body">
+                            Hacettepe University
+							https://www.hacettepe.edu.tr/
+                        </div><!--//education-body-->
+                        <div class="time">2014 - 2018</div>
+                        <div class="desc">
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+            </div><!--//row-->
+        </section><!--//section-->
+        
+        
+        <section id="skills-section" class="skills-section section text-center">
+            <h2 class="section-title">Professional Skills</h2>
+            <div class="top-skills">
+                <div class="row">
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+							<img height="50" src="assets/images/javascript-2752148-2284965.png"> <hr>
+                            <h4 class="skill-name"> Javascipt </h4>
+								<span class="skill-tag">Object Oriented Programming</span>
+								<span class="skill-tag">Node</span>
+								<span class="skill-tag">Vue</span>
+								<span class="skill-tag">Vuex</span>
+								<span class="skill-tag">React</span>
+								<span class="skill-tag">Redux</span> 
+
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+							<img height="50" src="assets/images/python.png"> <hr>
+                            <h4 class="skill-name">Python</h4>
+							<span class="skill-tag"> Django </span>
+							<span class="skill-tag"> Django-Rest </span>
+							<span class="skill-tag"> Flask </span>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+							<img height="50" src="assets/images/c-programming-569564.png"> <hr>
+                            <h4 class="skill-name"> C - Programming </h4>
+							<span class="skill-tag"> Function Oriented Programming </span>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                </div><!--//row-->
+            </div><!--//top-skills-->
+            
+            <div class="other-skills">
+                <h3 class="subtitle">Other Skills</h3>
+                <div class="misc-skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">SASS</span>
+                    <span class="skill-tag">Git</span>
+                    <br>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">SQL</span>
+					<span class="skill-tag">User Interfaces</span>
+					<span class="skill-tag">Test-driven development -TDD</span>
+
+                </div>
+            </div><!--//other-skills-->
+            
+        </section><!--//skills-section-->
+
+        <section id="portfolio-section" class="portfolio-section section">
+            <h2 class="section-title">Portfolio</h2>
+            <ul id="filters" class="filters clearfix">
+                <li class="type active" data-filter="*">All</li>
+                <li class="type" data-filter=".backend">Back-end</li>
+                <li class="type" data-filter=".frontend">Front-end</li>
+            </ul><!--//filters-->
+            <div class="items-wrapper isotope row">
+                <!-- FLUAI -->
+                <div class="item backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://fluai.com/"><img class="img-fluid" src="assets/images/fluai.JPG" alt="fluai" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://fluai.com/">FLUAI</a></h3>
+                            <div class="meta"> Django-Rest </div>
+                            <div class="action"><a href='https://apps.apple.com/us/app/fluai-check-the-flu/id1532648357'>View on App Store &rarr;</a></div>
+                            <div class="action"><a href='https://play.google.com/store/apps/details?id=com.yesilscience.fluai'>View on Play Store &rarr;</a></div>
+                        </div><!--//content-->    
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <!-- PHONES  -->
+                <div class="item backend frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://wtmb-front.herokuapp.com/">   <img class="img-fluid" src="/assets/images/phones.JPG" alt="WTMB Project" /> </a> 
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://wtmb-front.herokuapp.com/">WTM Berlin Project</a></h3>
+                            <div class="meta">Express & Vue </div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/WTMBerlin">View on Github &rarr;</a></div>
+                        </div><!--//content-->              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://unruffled-feynman-934740.netlify.app/"> <img class="img-fluid" src="/assets/images/github-battle.JPG" alt="github battle" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://unruffled-feynman-934740.netlify.app/"> Github Battle </a></h3>
+                            <div class="meta">React - Redux</div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/github-battle">View on Github &rarr;</a></div>
+                        </div><!--//content-->              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item frontend backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="/assets/images/twikker.JPG" alt="" />
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="">Twikker Project</a></h3>
+                            <div class="meta">Django & JavaScript</div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/TwikkerApp">View on Github &rarr;</a></div>
+                        </div><!--//content-->         
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://www.koyyerindeyim.com/"> <img class="img-fluid" src="/assets/images/koyyeri.JPG" alt="koyyeri" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://www.koyyerindeyim.com/"> Koy Yerim Website </a></h3>
+                            <div class="meta"> Wordpress </div>
+                        </div><!--//content-->              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://ideapol.net/"> <img class="img-fluid" src="/assets/images/ideapol.JPG" alt="ideapol" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://ideapol.net/"> Ideapol Website </a></h3>
+                            <div class="meta"> Wordpress </div>
+                        </div><!--//content-->              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://bilgedemirkaya.github.io/C0D3/js4/minesweeper.html"> <img class="img-fluid" src="/assets/images/minesweeper.JPG" alt="" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.github.io/C0D3/js4/minesweeper.html">Mine Sweeper</a></h3>
+                            <div class="meta">JavaScript </div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js4">View on Github &rarr;</a></div>
+
+                        </div><!--//content-->    
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://bilgedemirkaya.github.io/C0D3/js4/selection.html"> <img class="img-fluid" src="/assets/images/selection.JPG" alt="" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.github.io/C0D3/js4/selection.html">Selection Boxes </a></h3>
+                            <div class="meta">JavaScript & CSS</div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js4">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                                 
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://bilgedemirkaya.github.io/C0D3/js4/kanbanwithclasses.html"><img class="img-fluid" src="/assets/images/kanban.JPG" alt="kanban" />  </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.github.io/C0D3/js4/kanbanwithclasses.html">Kanban Board </a></h3>
+                            <div class="meta">JavaScript </div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js4">View on Github &rarr;</a></div>
+                        </div><!--//content-->              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                           <a href="https://bilgedemirkaya.github.io/C0D3/js4/lightsoff.html"> <img class="img-fluid" src="/assets/images/lightsoff.JPG" alt="" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.github.io/C0D3/js4/lightsoff.html">Lights Off Game - When all the lights are off, you win.</a></h3>
+                            <div class="meta">JavaScript</div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js4">View on Github &rarr;</a></div>
+                        </div><!--//content-->            
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                           <a href="https://bilgedemirkaya.github.io/C0D3/js4/googlescope.html"> <img class="img-fluid" src="/assets/images/scope.JPG" alt="" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.github.io/C0D3/js4/googlescope.html">Google Scope</a></h3>
+                            <div class="meta"> CSS & JavaScript</div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js4">View on Github &rarr;</a></div>
+                        </div><!--//content-->            
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                           <a href="https://bilgedemirkaya.github.io/C0D3/js4/stars.html"> <img class="img-fluid" src="/assets/images/stars.JPG" alt="" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.github.io/C0D3/js4/stars.html">Stars</a></h3>
+                            <div class="meta"> CSS & JavaScript</div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js4">View on Github &rarr;</a></div>
+                        </div><!--//content-->            
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                           <a href="https://bilgedemirkaya.github.io/C0D3/js4/smartwatch.html"> <img class="img-fluid" src="/assets/images/watch.JPG" alt="" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.github.io/C0D3/js4/smartwatch.html">Smart Watch</a></h3>
+                            <div class="meta"> CSS & JavaScript</div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js4">View on Github &rarr;</a></div>
+                        </div><!--//content-->            
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://bilgedemirkaya.freedomains.dev/files"> <img class="img-fluid" src="/assets/images/editor.JPG" alt="" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.freedomains.dev/files"> Online text editing site - IDE ~ Files get deleted after 5 minutes</a></h3>
+                            <div class="meta"> Node.js & Ace </div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js5">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                                 
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+                <div class="item backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://bilgedemirkaya.freedomains.dev/visitors"> <img class="img-fluid" src="/assets/images/visitors.JPG" alt="" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.freedomains.dev/visitors"> Check Visitors Cities  </a></h3>
+                            <div class="meta"> Node.js </div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js5">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                                 
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://bilgedemirkaya.freedomains.dev/commands"> <img class="img-fluid" src="/assets/images/Terminal.JPG" alt="" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.freedomains.dev/commands"> Terminal Project -  Give commands to server terminal  </a></h3>
+                            <div class="meta"> Node.js & child_process Library</div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js5">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                                 
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <a href="https://bilgedemirkaya.freedomains.dev/memegen/api/type%20anything%20in%20url%20to%20make%20a%20meme?blur=1"> <img class="img-fluid" src="/assets/images/memegen.JPG" alt="" /> </a>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="https://bilgedemirkaya.freedomains.dev/memegen/api/type%20anything%20in%20url%20to%20make%20a%20meme?blur=1"> Meme Generator </a></h3>
+                            <div class="meta"> Node.js & Jimp </div>
+                            <div class="action"><a href="https://github.com/bilgedemirkaya/C0D3/tree/main/js5">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                                 
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+            </div><!--//item-wrapper-->
+            
+        </section><!--//section-->
+        
+        <section id="certificates-section" class="certificates">
+            <h2 class="section-title"> Some of Certificates</h2>       
+            <div >          
+                <!-- Wrapper for slides -->
+                <div class="container">
+                    <div class="jumbotron">
+                        <img class="certificates" id="cs50w" src="assets/images/CS50x.png" height="100">
+						<h5 style="display: inline-block; margin-top:20px;"> CS50's Web Programming with Python and JavaScript </h3>
+						<!-- The Modal -->
+						<div id="cswModal" class="modal">
+							<span class="close">&times;</span>
+							<img class="modal-content" id="img02">
+							<div class="caption"></div>
+						</div>   
+
+                    </div><!--//jumbotron-->
+                    <div class="jumbotron">
+                        <img class="certificates" id="cs50" src="assets/images/CS50W.png" height="100">
+						<h5 style="display: inline-block; margin-top:20px;"> Harvard University Introduction the Computer Science CS50x </h3>
+						<!-- The Modal -->
+						<div id="csModal" class="modal">
+							<span class="close">&times;</span>
+							<img class="modal-content" id="img01">
+							<div class="caption"></div>
+						</div>
+					</div><!--//source-->   
+               
+					<div class="jumbotron">
+                    <img class="certificates" id="advancedjs" src="assets/images/advancedjs.JPG" height="100">
+					<h5 style="display: inline-block; margin-top:20px;"> ui.dev Advanced JavaScript </h3>
+					<!-- The Modal -->
+					<div id="jsModal" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img03">
+						<div class="caption"></div>
+					</div>
+                    </div><!--//item-->
+
+					<div class="jumbotron">
+						<img class="certificates" id="redux" src="assets/images/redux.JPG" height="100">
+						<h5 style="display: inline-block; margin-top:20px;"> ui.dev Redux </h5>
+						<!-- The Modal -->
+						<div id="reduxModal" class="modal">
+							<span class="close">&times;</span>
+							<img class="modal-content" id="img04">
+							<div id="caption"></div>
+						</div>
+						</div><!--//item-->
+
+                </div><!--//carousel-inner-->
+            </div><!--//testimonials-carousel-->
+            
+        </section><!--//section-->
+
+        <footer class="footer text-center">
+            <div class="container">
+                <small class="copyright">Template Copyright @ <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+                <hr>
+                <small class="copyright"> Template re-designed by Bilge Demirkaya </small>
+            </div><!--//container-->
+        </footer>
+
+    </div><!--//wrapper-->
+    
+    <!-- Javascript -->          
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>
+    addBackToTop({
+        diameter: 80,
+        backgroundColor: 'rgb(255, 82, 82)',
+        textColor: '#fff',
+        size: 'diameter', 
+        cornerOffset: 20, // px
+      })
+    
+    </script> 
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+      <script src="assets/plugins/gumshoe-master/dist/gumshoe.polyfills.js"></script> 
+      <script src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+
